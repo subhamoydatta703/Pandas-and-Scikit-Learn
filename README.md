@@ -8,6 +8,7 @@ This repository contains educational materials and practice notebooks for learni
 - `pandas/pd_bg_prac1.ipynb`: Additional Pandas practice using a larger email dataset. Covers CSV loading, DataFrame inspection, column selection, and `loc`/`iloc` access.
 - `sklearn/sklearn_day1.ipynb`: Introduction to Scikit-Learn. Covers Linear Regression, Decision Trees, Train/Test splitting, and Cross-Validation.
 - `data/data_pandas_practice.csv`: Practice dataset used by the Pandas notebook.
+- `data/emails.csv`: Optional larger email dataset expected by `pandas/pd_bg_prac1.ipynb`. Add this file locally if you want to run that notebook.
 - `requirements.txt`: Python dependencies for running the notebooks.
 
 ## Getting Started
@@ -45,8 +46,28 @@ jupyter lab
 Open each notebook from its library folder.
 
 - `pandas/pandas_beginner.ipynb` reads `data/data_pandas_practice.csv` from this repository.
-- `pandas/pd_bg_prac1.ipynb` currently expects an email CSV at `E:/emails.csv` or `E:/data/emails.csv`. Place your dataset in one of those locations, or update `data_path` in the notebook.
+- `pandas/pd_bg_prac1.ipynb` reads `data/emails.csv`. Place the email dataset there before running the notebook.
 - `sklearn/sklearn_day1.ipynb` uses small in-notebook NumPy arrays, so it does not need a separate dataset.
+
+## Git Push Checklist
+
+Before pushing to GitHub, check what changed:
+```bash
+git status
+```
+
+Stage and commit the updated project files:
+```bash
+git add README.md requirements.txt pandas/pd_bg_prac1.ipynb
+git commit -m "Update notebook paths and project docs"
+```
+
+Push your branch:
+```bash
+git push
+```
+
+If `data/emails.csv` is large or private, do not commit it. Keep it local and document where to download it instead.
 
 ## Topics Covered
 
