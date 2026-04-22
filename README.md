@@ -5,6 +5,7 @@ This repository contains educational materials and practice notebooks for learni
 ## Project Structure
 
 - `pandas/pandas_beginner.ipynb`: Introduction to Pandas DataFrames and Series. Covers data loading, exploration, and selection techniques.
+- `pandas/pd_bg_prac1.ipynb`: Additional Pandas practice using a larger email dataset. Covers CSV loading, DataFrame inspection, column selection, and `loc`/`iloc` access.
 - `sklearn/sklearn_day1.ipynb`: Introduction to Scikit-Learn. Covers Linear Regression, Decision Trees, Train/Test splitting, and Cross-Validation.
 - `data/data_pandas_practice.csv`: Practice dataset used by the Pandas notebook.
 - `requirements.txt`: Python dependencies for running the notebooks.
@@ -13,8 +14,8 @@ This repository contains educational materials and practice notebooks for learni
 
 ### Prerequisites
 
-- Python 3.x
-- Jupyter Notebook or JupyterLab
+- Python 3.12 or another recent Python 3 version
+- JupyterLab, installed from `requirements.txt`
 
 ### Installation
 
@@ -36,12 +37,16 @@ This repository contains educational materials and practice notebooks for learni
 
 ## Usage
 
-Launch Jupyter Notebook to explore the tutorials:
+Launch JupyterLab to explore the notebooks:
 ```bash
-jupyter notebook
+jupyter lab
 ```
 
-Open each notebook from its library folder. The Pandas notebook reads its practice CSV from the repository's `data/` folder, so it does not depend on an absolute local path.
+Open each notebook from its library folder.
+
+- `pandas/pandas_beginner.ipynb` reads `data/data_pandas_practice.csv` from this repository.
+- `pandas/pd_bg_prac1.ipynb` currently expects an email CSV at `E:/emails.csv` or `E:/data/emails.csv`. Place your dataset in one of those locations, or update `data_path` in the notebook.
+- `sklearn/sklearn_day1.ipynb` uses small in-notebook NumPy arrays, so it does not need a separate dataset.
 
 ## Topics Covered
 
@@ -50,6 +55,7 @@ Open each notebook from its library folder. The Pandas notebook reads its practi
 - DataFrame and Series structures
 - Indexing and Slicing (`loc`, `iloc`)
 - Basic statistics and data info
+- Working with NumPy scalar values inside Pandas
 
 ### Scikit-Learn
 - Linear Regression for continuous predictions
