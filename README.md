@@ -5,6 +5,7 @@ This repository contains educational materials and practice notebooks for learni
 ## Project Structure
 
 - `pandas/pandas_beginner.ipynb`: Introduction to Pandas DataFrames and Series. Covers data loading, exploration, and selection techniques.
+- `pandas/pandas_intermediate.ipynb`: Intermediate Pandas techniques. Covers data aggregation (`groupby`, `agg`) and custom functions using `lambda`.
 - `pandas/pd_bg_prac1.ipynb`: Additional Pandas practice using a larger email dataset. Covers CSV loading, DataFrame inspection, column selection, and `loc`/`iloc` access.
 - `sklearn/sklearn_day1.ipynb`: Introduction to Scikit-Learn. Covers Linear Regression, Decision Trees, Train/Test splitting, and Cross-Validation.
 - `data/data_pandas_practice.csv`: Practice dataset used by the Pandas notebook.
@@ -46,6 +47,7 @@ jupyter lab
 Open each notebook from its library folder.
 
 - `pandas/pandas_beginner.ipynb` reads `data/data_pandas_practice.csv` from this repository.
+- `pandas/pandas_intermediate.ipynb` uses small in-notebook data, so it does not need a separate dataset.
 - `pandas/pd_bg_prac1.ipynb` reads `data/emails.csv`. Place the email dataset there before running the notebook.
 - `sklearn/sklearn_day1.ipynb` uses small in-notebook NumPy arrays, so it does not need a separate dataset.
 
@@ -58,7 +60,7 @@ git status
 
 Stage and commit the updated project files:
 ```bash
-git add README.md requirements.txt pandas/pd_bg_prac1.ipynb
+git add README.md requirements.txt pandas/pd_bg_prac1.ipynb pandas/pandas_intermediate.ipynb
 git commit -m "Update notebook paths and project docs"
 ```
 
@@ -77,6 +79,8 @@ If `data/emails.csv` is large or private, do not commit it. Keep it local and do
 - Indexing and Slicing (`loc`, `iloc`)
 - Basic statistics and data info
 - Working with NumPy scalar values inside Pandas
+- Data Aggregation (`groupby`, `agg`)
+- Custom calculations using `lambda` functions
 
 ### Scikit-Learn
 - Linear Regression for continuous predictions
