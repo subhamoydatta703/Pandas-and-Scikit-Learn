@@ -5,7 +5,7 @@ This repository contains educational materials and practice notebooks for learni
 ## Project Structure
 
 - `pandas/pandas_beginner.ipynb`: Introduction to Pandas DataFrames and Series. Covers data loading, exploration, and selection techniques.
-- `pandas/pandas_intermediate.ipynb`: Intermediate Pandas techniques. Covers data aggregation (`groupby`, `agg`), custom functions using `lambda`, combining DataFrames (`merge`, `join`, `concat`), and applying functions (`apply`).
+- `pandas/pandas_intermediate.ipynb`: Intermediate Pandas techniques. Covers data aggregation (`groupby`, `agg`), custom functions (`lambda`, `apply`, `map`), combining DataFrames (`merge`, `join`, `concat`), categorical encoding (`get_dummies`), binning (`cut`, `qcut`), and summarizing data (`pivot_table`).
 - `pandas/pd_bg_prac1.ipynb`: Additional Pandas practice using a larger email dataset. Covers CSV loading, DataFrame inspection, column selection, and `loc`/`iloc` access.
 - `sklearn/sklearn_day1.ipynb`: Introduction to Scikit-Learn. Covers Linear Regression, Decision Trees, Train/Test splitting, and Cross-Validation.
 - `data/data_pandas_practice.csv`: Practice dataset used by the Pandas notebook.
@@ -82,7 +82,10 @@ If `data/emails.csv` is large or private, do not commit it. Keep it local and do
 - Data Aggregation (`groupby`, `agg`)
 - Custom calculations using `lambda` functions
 - Combining DataFrames (`merge`, `join`, `concat`)
-- Applying custom functions across rows and columns (`apply`)
+- Applying functions (`apply`, `map`)
+- Categorical encoding (`get_dummies`)
+- Binning continuous data (`cut`, `qcut`)
+- Data summarization (`pivot_table`)
 
 ### Scikit-Learn
 - Linear Regression for continuous predictions
